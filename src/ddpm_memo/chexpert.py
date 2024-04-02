@@ -48,7 +48,7 @@ def name_from_path(path):
 
     for k, v in matchdict.items():
         if not v:
-            raise RuntimeError(f'Key "{key}" unexpectedly had no matches.')
+            raise RuntimeError(f'Key "{k}" unexpectedly had no matches.')
 
     return '{patient}-{study}-{view}-{frontal_lateral}'.format_map(matchdict)
 
