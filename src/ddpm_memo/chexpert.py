@@ -74,6 +74,14 @@ def make_prompt(point, codes):
     return ', '.join(sentences)
 
 
+def get_image_path(dataset_path, rel_path):
+    # Remove initial 'CheXpert-v1.0-small' path component.
+    # Then rel_path is relative to the directory of the CSV file.
+    rel_path = Path(*Path(rel_path).parts[1:])
+
+    return Path(dataset_path) / rel_path
+
+
 def prepare_dataset(dataset_csv, outdir, codes_path):
     dataset_csv = Path(dataset_csv)
     outdir = Path(outdir)
@@ -88,4 +96,8 @@ def prepare_dataset(dataset_csv, outdir, codes_path):
         for point in csvreader:
             base_filename = name_from_path(point['Path'])
 
+            # Path to the image file.
+            src_path = get_image_path(dataset_csv.parent, point['Path'])
+
+            # Produce a prompt based on the data in the CSV file.
             prompt = make_prompt(point, codes)
