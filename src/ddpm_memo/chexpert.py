@@ -1,4 +1,5 @@
 import csv
+import os.path
 from pathlib import Path
 import re
 
@@ -99,5 +100,15 @@ def prepare_dataset(dataset_csv, outdir, codes_path):
             # Path to the image file.
             src_path = get_image_path(dataset_csv.parent, point['Path'])
 
+            base_path = outdir / base_filename
+
+            # Make symlink to image file.
+            link_target = os.path.relpath(src_path, outdir)
+            base_path.with_suffix('.jpg').symlink_to(link_target)
+
             # Produce a prompt based on the data in the CSV file.
             prompt = make_prompt(point, codes)
+
+            # Dump prompt into text file.
+            with base_path.with_suffix('.txt').open('xt') as file:
+                file.write(prompt)
