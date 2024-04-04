@@ -3,6 +3,9 @@ from pathlib import Path
 import re
 
 
+import yaml
+
+
 COLUMNS = [
     'Path',
     'Sex',
@@ -53,12 +56,36 @@ def name_from_path(path):
     return '{patient}-{study}-{view}-{frontal_lateral}'.format_map(matchdict)
 
 
-def prepare_dataset(dataset_csv, outdir, img_prefix=''):
+def make_prompt(point, codes):
+    sentences = []
+    for key in COLUMNS:
+        if key == 'Path':
+            continue
+
+        value = point[key]
+
+        if key == 'Age':
+            sentences.append(codes[key].format(value=value))
+        else:
+            sentences.append(codes[key][value].format(value=value))
+
+    # TODO: Remove empty sentences.
+
+    return ', '.join(sentences)
+
+
+def prepare_dataset(dataset_csv, outdir, codes_path):
     dataset_csv = Path(dataset_csv)
     outdir = Path(outdir)
+    codes_path = Path(codes_path)
+
+    with codes_path.open('rt') as file:
+        codes = yaml.safe_load(file)
 
     with dataset_csv.open('rt') as file:
         next(file) # Assume that header content is COLUMNS.
         csvreader = csv.DictReader(file, COLUMNS)
         for point in csvreader:
             base_filename = name_from_path(point['Path'])
+
+            prompt = make_prompt(point, codes)

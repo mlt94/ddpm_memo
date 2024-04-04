@@ -9,9 +9,10 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('chexpert_csv')
     parser.add_argument('memodata_path')
+    parser.add_argument('codes_path')
     args = parser.parse_args()
 
-    prepare_dataset(args.chexpert_csv, args.memodata_path)
+    prepare_dataset(args.chexpert_csv, args.memodata_path, args.codes_path)
 
 
 if __name__ == '__main__':
