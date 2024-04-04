@@ -70,9 +70,7 @@ def make_prompt(point, codes):
         else:
             sentences.append(codes[key][value].format(value=value))
 
-    # TODO: Remove empty sentences.
-
-    return ', '.join(sentences)
+    return ', '.join(filter(None, sentences))
 
 
 def get_image_path(dataset_path, rel_path):
