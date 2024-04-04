@@ -1,6 +1,7 @@
 "Sex":
   "Female": "Patient is female and"
   "Male": "Patient is male and"
+  "Unknown": "Patient is of unknown sex"
 
 "Age": "is {value} years old"
 
@@ -11,86 +12,89 @@
 "AP/PA":
   "AP": "X-Ray beam entering from Anterior to Posterior"
   "PA": "X-Ray beam entering from Posterior to Anterior"
+  "LL": "X-Ray beam entering laterally from left"
+  "RL": "X-Ray beam entering laterally from right"
+  "": ""
 
 "No Finding":
   "1.0": "Patient has no known pathological diseases"
-  "NaN": "Patient has or may have pathological disease"
+  "": "Patient has or may have pathological disease"
 
 "Enlarged Cardiomediastinum":
   "0.0": "No evidence of Enlarged Cardiomediastinum"
   "1.0": "Enlarged Cardiomediastinum"
   "-1.0": "Uncertain presence of Enlarged Cardiomediastinum"
-  "NaN": ""
+  "": ""
 
 "Cardiomegaly":
   "0.0": "No evidence of Cardiomegaly"
   "1.0": "Cardiomegaly"
   "-1.0": "Uncertain presence of Cardiomegaly"
-  "NaN": ""
+  "": ""
 
 "Lung Opacity":
   "0.0": "No evidence of Lung Opacity"
   "1.0": "Lung Opacity"
   "-1.0": "Uncertain presence of Lung Opacity"
-  "NaN": ""
+  "": ""
 
 "Lung Lesion":
   "0.0": "No evidence of Lung Lesion"
   "1.0": "Lung Lesion"
   "-1.0": "Uncertain presence of Lung Lesion"
-  "NaN": ""
+  "": ""
 
 "Edema":
   "0.0": "No evidence of Edema"
   "1.0": "Edema"
   "-1.0": "Uncertain presence of Edema"
-  "NaN": ""
+  "": ""
 
 "Consolidation":
   "0.0": "No evidence of Consolidation"
   "1.0": "Consolidation"
   "-1.0": "Uncertain presence of Consolidation"
-  "NaN": ""
+  "": ""
 
 "Pneumonia":
   "0.0": "No evidence of Pneumonia"
   "1.0": "Pneumonia"
   "-1.0": "Uncertain presence of Pneumonia"
-  "NaN": ""
+  "": ""
 
 "Atelectasis":
   "0.0": "No evidence of Atelectasis"
   "1.0": "Atelectasis"
   "-1.0": "Uncertain presence of Atelectasis"
-  "NaN": ""
+  "": ""
 
 "Pneumothorax":
   "0.0": "No evidence of Pneumothorax"
   "1.0": "Pneumothorax"
   "-1.0": "Uncertain presence of Pneumothorax"
-  "NaN": ""
+  "": ""
 
 "Pleural Effusion":
   "0.0": "No evidence of Pleural Effusion"
   "1.0": "Pleural Effusion"
   "-1.0": "Uncertain presence of Pleural Effusion"
-  "NaN": ""
+  "": ""
 
 "Pleural Other":
   "0.0": "No evidence of Pleural Other"
   "1.0": "Pleural Other"
   "-1.0": "Uncertain presence of Pleural Other"
-  "NaN": ""
+  "": ""
 
 "Fracture":
   "0.0": "No evidence of Fracture"
   "1.0": "Fracture"
   "-1.0": "Uncertain presence of Fracture"
-  "NaN": ""
+  "": ""
 
 "Support Devices":
   "0.0": "No known support Devices"
   "1.0": "Support Devices present"
   "-1.0": "Uncertain presence of Support Devices"
-  "NaN": ""
+  "": ""
 
