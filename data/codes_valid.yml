@@ -1,0 +1,100 @@
+"Sex":
+  "Female": "Patient is female and"
+  "Male": "Patient is male and"
+  "Unknown": "Patient is of unknown sex"
+
+"Age": "is {value} years old"
+
+"Frontal/Lateral":
+  "Frontal": "X-Ray from front"
+  "Lateral": "X-Ray from side"
+
+"AP/PA":
+  "AP": "X-Ray beam entering from Anterior to Posterior"
+  "PA": "X-Ray beam entering from Posterior to Anterior"
+  "LL": "X-Ray beam entering laterally from left"
+  "RL": "X-Ray beam entering laterally from right"
+  "": ""
+
+"No Finding":
+  "1.0": "Patient has no known pathological diseases"
+  "0.0": "Patient has or may have pathological disease"
+
+"Enlarged Cardiomediastinum":
+  "0.0": "No evidence of Enlarged Cardiomediastinum"
+  "1.0": "Enlarged Cardiomediastinum"
+  "-1.0": "Uncertain presence of Enlarged Cardiomediastinum"
+  "0": ""
+
+"Cardiomegaly":
+  "0.0": "No evidence of Cardiomegaly"
+  "1.0": "Cardiomegaly"
+  "-1.0": "Uncertain presence of Cardiomegaly"
+  "0": ""
+
+"Lung Opacity":
+  "0.0": "No evidence of Lung Opacity"
+  "1.0": "Lung Opacity"
+  "-1.0": "Uncertain presence of Lung Opacity"
+  "0": ""
+
+"Lung Lesion":
+  "0.0": "No evidence of Lung Lesion"
+  "1.0": "Lung Lesion"
+  "-1.0": "Uncertain presence of Lung Lesion"
+  "": ""
+
+"Edema":
+  "0.0": "No evidence of Edema"
+  "1.0": "Edema"
+  "-1.0": "Uncertain presence of Edema"
+  "": ""
+
+"Consolidation":
+  "0.0": "No evidence of Consolidation"
+  "1.0": "Consolidation"
+  "-1.0": "Uncertain presence of Consolidation"
+  "": ""
+
+"Pneumonia":
+  "0.0": "No evidence of Pneumonia"
+  "1.0": "Pneumonia"
+  "-1.0": "Uncertain presence of Pneumonia"
+  "": ""
+
+"Atelectasis":
+  "0.0": "No evidence of Atelectasis"
+  "1.0": "Atelectasis"
+  "-1.0": "Uncertain presence of Atelectasis"
+  "": ""
+
+"Pneumothorax":
+  "0.0": "No evidence of Pneumothorax"
+  "1.0": "Pneumothorax"
+  "-1.0": "Uncertain presence of Pneumothorax"
+  "": ""
+
+"Pleural Effusion":
+  "0.0": "No evidence of Pleural Effusion"
+  "1.0": "Pleural Effusion"
+  "-1.0": "Uncertain presence of Pleural Effusion"
+  "": ""
+
+"Pleural Other":
+  "0.0": "No evidence of Pleural Other"
+  "1.0": "Pleural Other"
+  "-1.0": "Uncertain presence of Pleural Other"
+  "": ""
+
+"Fracture":
+  "0.0": "No evidence of Fracture"
+  "1.0": "Fracture"
+  "-1.0": "Uncertain presence of Fracture"
+  "": ""
+
+"Support Devices":
+  "0.0": "No known support Devices"
+  "1.0": "Support Devices present"
+  "-1.0": "Uncertain presence of Support Devices"
+  "": ""
+
