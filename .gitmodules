@@ -1,3 +1,0 @@
-[submodule "train_diffusion_model"]
-	path = train_diffusion_model
-	url = /home/mlut/memorization/adlcv-memorization-in-diffusion-models/train_diffusion_model
