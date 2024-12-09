@@ -70,6 +70,7 @@ def make_prompt(point, codes):
         else:
             sentences.append(codes[key][value].format(value=value))
 
+
     return ', '.join(filter(None, sentences))
 
 

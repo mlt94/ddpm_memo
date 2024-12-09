@@ -10,91 +10,95 @@
   "Lateral": "X-Ray from side"
 
 "AP/PA":
-  "AP": "X-Ray beam entering from Anterior to Posterior"
-  "PA": "X-Ray beam entering from Posterior to Anterior"
-  "LL": "X-Ray beam entering laterally from left"
-  "RL": "X-Ray beam entering laterally from right"
+  "AP": "X-Ray A to P"
+  "PA": "X-Ray P to A"
+  "LL": "X-Ray left"
+  "RL": "X-Ray right"
   "": ""
 
 "No Finding":
   "1.0": "Patient has no known pathological diseases"
+  "0.0": "Patient has or may have pathological disease"
   "": "Patient has or may have pathological disease"
 
 "Enlarged Cardiomediastinum":
-  "0.0": "No evidence of Enlarged Cardiomediastinum"
+  "0.0": "No Enlarged Cardiomediastinum"
   "1.0": "Enlarged Cardiomediastinum"
-  "-1.0": "Uncertain presence of Enlarged Cardiomediastinum"
+  "-1.0": "Uncertain of Enlarged Cardiomediastinum"
   "": ""
+  "0": ""
 
 "Cardiomegaly":
-  "0.0": "No evidence of Cardiomegaly"
+  "0.0": "No Cardiomegaly"
   "1.0": "Cardiomegaly"
-  "-1.0": "Uncertain presence of Cardiomegaly"
+  "-1.0": "Uncertain of Cardiomegaly"
   "": ""
+  "0": ""
 
 "Lung Opacity":
-  "0.0": "No evidence of Lung Opacity"
+  "0.0": "No Lung Opacity"
   "1.0": "Lung Opacity"
-  "-1.0": "Uncertain presence of Lung Opacity"
+  "-1.0": "Uncertain of Lung Opacity"
   "": ""
+  "0": ""
 
 "Lung Lesion":
-  "0.0": "No evidence of Lung Lesion"
+  "0.0": "No Lung Lesion"
   "1.0": "Lung Lesion"
-  "-1.0": "Uncertain presence of Lung Lesion"
+  "-1.0": "Uncertain of Lung Lesion"
   "": ""
 
 "Edema":
-  "0.0": "No evidence of Edema"
+  "0.0": "No Edema"
   "1.0": "Edema"
-  "-1.0": "Uncertain presence of Edema"
+  "-1.0": "Uncertain of Edema"
   "": ""
 
 "Consolidation":
-  "0.0": "No evidence of Consolidation"
+  "0.0": "No Consolidation"
   "1.0": "Consolidation"
-  "-1.0": "Uncertain presence of Consolidation"
+  "-1.0": "Uncertain of Consolidation"
   "": ""
 
 "Pneumonia":
-  "0.0": "No evidence of Pneumonia"
+  "0.0": "No Pneumonia"
   "1.0": "Pneumonia"
-  "-1.0": "Uncertain presence of Pneumonia"
+  "-1.0": "Uncertain of Pneumonia"
   "": ""
 
 "Atelectasis":
-  "0.0": "No evidence of Atelectasis"
+  "0.0": "No Atelectasis"
   "1.0": "Atelectasis"
-  "-1.0": "Uncertain presence of Atelectasis"
+  "-1.0": "Uncertain of Atelectasis"
   "": ""
 
 "Pneumothorax":
-  "0.0": "No evidence of Pneumothorax"
+  "0.0": "No Pneumothorax"
   "1.0": "Pneumothorax"
-  "-1.0": "Uncertain presence of Pneumothorax"
+  "-1.0": "Uncertain of Pneumothorax"
   "": ""
 
 "Pleural Effusion":
-  "0.0": "No evidence of Pleural Effusion"
+  "0.0": "No Pleural Effusion"
   "1.0": "Pleural Effusion"
-  "-1.0": "Uncertain presence of Pleural Effusion"
+  "-1.0": "Uncertain of Pleural Effusion"
   "": ""
 
 "Pleural Other":
-  "0.0": "No evidence of Pleural Other"
+  "0.0": "No Pleural Other"
   "1.0": "Pleural Other"
-  "-1.0": "Uncertain presence of Pleural Other"
+  "-1.0": "Uncertain of Pleural Other"
   "": ""
 
 "Fracture":
-  "0.0": "No evidence of Fracture"
+  "0.0": "No Fracture"
   "1.0": "Fracture"
-  "-1.0": "Uncertain presence of Fracture"
+  "-1.0": "Uncertain of Fracture"
   "": ""
 
 "Support Devices":
-  "0.0": "No known support Devices"
-  "1.0": "Support Devices present"
-  "-1.0": "Uncertain presence of Support Devices"
+  "0.0": "No support devices"
+  "1.0": "Support devices present"
+  "-1.0": "Uncertain of support devices"
   "": ""
 

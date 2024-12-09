@@ -18,12 +18,9 @@
 ### -- set the email address --
 ### -- Specify the output and error file. %J is the job-id --
 ### -- -o and -e mean append, -oo and -eo mean overwrite --
-#BSUB -o /dtu/blackhole/14/207860/memo/training/martin/%J.out
-#BSUB -e /dtu/blackhole/14/207860/memo/training/martin/%J.err
 # -- end of LSF options --
 
 
 # activate the virtual environment
-source /zhome/ca/2/153088/memorization/venv/bin/activate
-
-python /zhome/ca/2/153088/memorization/diffusion_memorization/detect_mem.py --run_name detect_memorization_validation --end 200 --model_id "/dtu/blackhole/14/207860/memo/training/chexpert_checkpoints/v1-20000/" 
+source 
+python /detect_mem.py --run_name detect_memorization_validation --end 200 --model_id "" 
